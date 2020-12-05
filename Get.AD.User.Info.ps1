@@ -3,10 +3,7 @@
 Import-Module AzureAD
 $Credential = Get-Credential
 Connect-AzureAD -Credential $Credential 
-Get-AzureADUser -ObjectID jeblin@rrsc.com | Format-Table -Auto
+$UserName = jpayne@rrsc.com
+#>
+Get-AzureADUser -ObjectID $UserName | Format-Table -Auto
 
-
-
-
-
-# Disconnect-AzureAD
